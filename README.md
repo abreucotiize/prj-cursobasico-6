@@ -1,5 +1,9 @@
 # prj-cursobasico-6
-Calculadora de peso
+Calculadora de peso, Projecto numero 6
+
+##Autor
+
+Pedro Joaquin Sosa Abreu
 
 ##Sinopsis
 
