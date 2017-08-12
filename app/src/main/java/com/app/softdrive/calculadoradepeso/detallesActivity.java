@@ -73,7 +73,7 @@ public class detallesActivity extends AppCompatActivity {
            if (estado != null) {
                switch (estado){
 
-                   case "true":String libra=String.valueOf(Integer.parseInt(dat)*2.2).substring(0,3);
+                   case "true":String libra=String.valueOf(Double.parseDouble(dat)*2.2).substring(0,3);
                        diferencia.setText("Tu sobrepeso es de: "+libra+" lb");
                        mipeso.setText("Tu peso es: "+peA+" LB");
                        pesoIdeal.setText("Tu peso ideal es: "+peI+" LB");
@@ -96,7 +96,7 @@ public class detallesActivity extends AppCompatActivity {
 
            if (estado != null) {
                switch (estado){
-                   case "true": String libra=String.valueOf(Integer.parseInt(dat)*2.2).substring(0,2);
+                   case "true": String libra=String.valueOf(Double.parseDouble(dat)*2.2).substring(0,2);
                        diferencia.setText("Te faltan: "+libra+" lb"+" para llegar a tu peso ideal");
                        mipeso.setText("Tu peso es: "+peA+" LB");
                        pesoIdeal.setText("Tu peso ideal es: "+peI+" LB");
