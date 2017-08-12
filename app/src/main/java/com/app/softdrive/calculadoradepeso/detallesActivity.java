@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class detallesActivity extends AppCompatActivity {
@@ -32,7 +33,7 @@ public class detallesActivity extends AppCompatActivity {
         diferencia=(TextView)findViewById(R.id.dife);
         imc=(ProgressBar)findViewById(R.id.progresso);
 
-
+        try{
         Bundle bundle=getIntent().getExtras();
 
         String estado= bundle.getString("estado");
@@ -40,6 +41,7 @@ public class detallesActivity extends AppCompatActivity {
         String pesoA= bundle.getString("peso");
         String pesoI= bundle.getString("pesoI");
         //String dife=bundle.getString("direfencia").toString();
+
 
         double pa=Double.parseDouble(pesoA);
         double pi=Double.parseDouble(pesoI);
@@ -62,7 +64,6 @@ public class detallesActivity extends AppCompatActivity {
 
 
 
-
        if(pa>pi){
            dif=pa-pi;
            String dat=String.valueOf(dif).substring(0,2);
@@ -74,12 +75,12 @@ public class detallesActivity extends AppCompatActivity {
 
                    case "true":String libra=String.valueOf(Integer.parseInt(dat)*2.2).substring(0,3);
                        diferencia.setText("Tu sobrepeso es de: "+libra+" lb");
-                       mipeso.setText("Tu peso es: "+peA+"LB");
-                       pesoIdeal.setText("Tu peso ideal es: "+peI+"LB");
+                       mipeso.setText("Tu peso es: "+peA+" LB");
+                       pesoIdeal.setText("Tu peso ideal es: "+peI+" LB");
                         break;
                    case "false":diferencia.setText("Tu sobrepeso es de: "+dat+" Kg");
-                       mipeso.setText("Tu peso es: "+pesoA+"KG");
-                       pesoIdeal.setText("Tu peso ideal es: "+pii+"KG");
+                       mipeso.setText("Tu peso es: "+pesoA+" KG");
+                       pesoIdeal.setText("Tu peso ideal es: "+pii+" KG");
                        break;
                }
            }
@@ -97,12 +98,12 @@ public class detallesActivity extends AppCompatActivity {
                switch (estado){
                    case "true": String libra=String.valueOf(Integer.parseInt(dat)*2.2).substring(0,2);
                        diferencia.setText("Te faltan: "+libra+" lb"+" para llegar a tu peso ideal");
-                       mipeso.setText("Tu peso es: "+peA+"LB");
-                       pesoIdeal.setText("Tu peso ideal es: "+peI+"LB");
+                       mipeso.setText("Tu peso es: "+peA+" LB");
+                       pesoIdeal.setText("Tu peso ideal es: "+peI+" LB");
                        break;
                    case "false":diferencia.setText("Te faltan: "+dat+" kg"+" para llegar a tu peso ideal");
-                       mipeso.setText("Tu peso es: "+pesoA+"KG");
-                       pesoIdeal.setText("Tu peso ideal es: "+pii+"KG");
+                       mipeso.setText("Tu peso es: "+pesoA+" KG");
+                       pesoIdeal.setText("Tu peso ideal es: "+pii+" KG");
                }
            }
 
@@ -169,6 +170,8 @@ public class detallesActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     }
-                });
+                });}catch (Exception e){
+    Toast.makeText(detallesActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+}
     }
 }
