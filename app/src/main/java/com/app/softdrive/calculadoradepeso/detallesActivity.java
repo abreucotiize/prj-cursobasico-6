@@ -74,12 +74,12 @@ public class detallesActivity extends AppCompatActivity {
 
                    case "true":String libra=String.valueOf(Integer.parseInt(dat)*2.2).substring(0,3);
                        diferencia.setText("Tu sobrepeso es de: "+libra+" lb");
-                       mipeso.setText("Tu peso es: "+peA);
-                       pesoIdeal.setText("Tu peso ideal es: "+peI);
+                       mipeso.setText("Tu peso es: "+peA+"LB");
+                       pesoIdeal.setText("Tu peso ideal es: "+peI+"LB");
                         break;
                    case "false":diferencia.setText("Tu sobrepeso es de: "+dat+" Kg");
-                       mipeso.setText("Tu peso es: "+pesoA);
-                       pesoIdeal.setText("Tu peso ideal es: "+pii);
+                       mipeso.setText("Tu peso es: "+pesoA+"KG");
+                       pesoIdeal.setText("Tu peso ideal es: "+pii+"KG");
                        break;
                }
            }
@@ -97,12 +97,12 @@ public class detallesActivity extends AppCompatActivity {
                switch (estado){
                    case "true": String libra=String.valueOf(Integer.parseInt(dat)*2.2).substring(0,2);
                        diferencia.setText("Te faltan: "+libra+" lb"+" para llegar a tu peso ideal");
-                       mipeso.setText("Tu peso es: "+peA);
-                       pesoIdeal.setText("Tu peso ideal es: "+peI);
+                       mipeso.setText("Tu peso es: "+peA+"LB");
+                       pesoIdeal.setText("Tu peso ideal es: "+peI+"LB");
                        break;
                    case "false":diferencia.setText("Te faltan: "+dat+" kg"+" para llegar a tu peso ideal");
-                       mipeso.setText("Tu peso es: "+pesoA);
-                       pesoIdeal.setText("Tu peso ideal es: "+pii);
+                       mipeso.setText("Tu peso es: "+pesoA+"KG");
+                       pesoIdeal.setText("Tu peso ideal es: "+pii+"KG");
                }
            }
 
