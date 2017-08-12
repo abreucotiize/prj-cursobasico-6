@@ -16,7 +16,6 @@ public class detallesActivity extends AppCompatActivity {
     TextView indice, stado, standar, stadod;
     TextView mipeso, pesoIdeal, diferencia;
     Button back;
-    private ProgressBar imc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class detallesActivity extends AppCompatActivity {
         mipeso=(TextView)findViewById(R.id.pn);
         pesoIdeal=(TextView)findViewById(R.id.pi);
         diferencia=(TextView)findViewById(R.id.dife);
-        imc=(ProgressBar)findViewById(R.id.progresso);
+        ProgressBar imc1 = (ProgressBar) findViewById(R.id.progresso);
 
         try{
         Bundle bundle=getIntent().getExtras();
@@ -58,7 +57,7 @@ public class detallesActivity extends AppCompatActivity {
         String subimc = imct.substring(0, 5);
         int prog=Integer.parseInt(subimc.substring(0,2));
 
-        imc.setProgress(prog);
+        imc1.setProgress(prog);
 
         indice.setText(subimc);
 
