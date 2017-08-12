@@ -42,14 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
         //-------------------llenado de spinners---------------------------
 
-        ArrayAdapter<CharSequence> sexadapter=ArrayAdapter.createFromResource(this, R.array.sexo, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> sexadapter=ArrayAdapter.createFromResource(this, R.array.sexo, R.layout.spinner_item);
 
 
-        ArrayAdapter<CharSequence> altadapter=ArrayAdapter.createFromResource(this, R.array.altura, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> altadapter=ArrayAdapter.createFromResource(this, R.array.altura, R.layout.spinner_item);
 
-        ArrayAdapter<CharSequence> pesoadapter=ArrayAdapter.createFromResource(this, R.array.peso, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> pesoadapter=ArrayAdapter.createFromResource(this, R.array.peso, R.layout.spinner_item);
 
-        ArrayAdapter<CharSequence> pesoLadapter=ArrayAdapter.createFromResource(this, R.array.pesoL, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> pesoLadapter=ArrayAdapter.createFromResource(this, R.array.pesoL, R.layout.spinner_item);
 
         //----------setear adapters--------------------------
 

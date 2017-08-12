@@ -14,8 +14,7 @@
         android:gravity="center"
         android:textSize="40sp"
         android:id="@+id/txt"
-        android:fontFamily=""
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/white"/>
 
     <TextView
         android:id="@+id/sext"
@@ -26,7 +25,7 @@
         android:layout_below="@id/txt"
         android:layout_centerHorizontal="true"
         android:text="@string/sexo"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="18sp"/>
 
     <Spinner
@@ -34,6 +33,7 @@
         android:layout_marginLeft="10sp"
         android:layout_height="wrap_content"
         android:id="@+id/spsex"
+        android:spinnerMode="dropdown"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:layout_below="@id/sext"
@@ -43,6 +43,7 @@
         android:id="@+id/lbl"
         android:layout_below="@id/spsex"
         android:text="@string/libras"
+        android:textColor="@android:color/white"
         android:layout_marginRight="32sp"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40sp"
         android:layout_below="@id/spsex"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:text="@string/altura_cm"
         android:textSize="18sp"/>
 
@@ -74,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40sp"
         android:layout_below="@id/spsex"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_alignParentRight="true"
         android:layout_marginRight="25sp"
         android:text="@string/peso_kg"

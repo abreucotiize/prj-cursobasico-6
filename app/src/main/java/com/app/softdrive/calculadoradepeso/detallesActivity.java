@@ -121,19 +121,19 @@ public class detallesActivity extends AppCompatActivity {
                     stado.setText("Delgadez Moderada");
                     standar.setText("- De 16.1 a 17");
                     stadod.setText("Tu bajo peso podria hacer disminuir tus defensas inmunitarias. Deberias visitar a un medico para asegurarte que estas bien. Te aconsejamos una dieta equilibrada y ejercicio para ganar peso y aumentar tu masa de muscular.");
-                    stado.setTextColor(Color.parseColor("#ffae00"));
+                    stado.setTextColor(Color.parseColor("#33ffdd"));
                 }
                 else if(imc<18.5){
                     stado.setText("Delgadez Aceptable");
                     standar.setText("- De 17.1 a 18.5");
                     stadod.setText("Enhorabuena, usted es delgado, pero no se decuide ya que esta por debajo de los niveles recomendados.");
-                    stado.setTextColor(Color.parseColor("#f1e904"));
+                    stado.setTextColor(Color.parseColor("#33ffdd"));
                 }
                 else if(imc<25){
                     stado.setText("Peso Normal");
                     standar.setText("- De 18.5 a 24.9");
                     stadod.setText("Tu IMC es ideal. Tienes una cantidad sana de grasa en el cuerpo, que es asociado con una vida mas larga, y bajas posibilidades de enfermedad grave. Coincidencia o no, la gente percibe las personas con este IMC mas atractivas esteticamente.");
-                    stado.setTextColor(Color.parseColor("#40fff9"));
+                    stado.setTextColor(Color.parseColor("#FF09C606"));
 
                 }
                 else if(imc<30){

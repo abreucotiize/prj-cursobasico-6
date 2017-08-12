@@ -17,7 +17,7 @@
         android:textSize="25sp"
         android:gravity="center"
         android:id="@+id/imct"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/white"/>
 
     <ProgressBar
         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
         android:layout_marginTop="30sp"
         android:textSize="30sp"
         android:layout_marginLeft="40sp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -96,7 +96,7 @@
         android:id="@+id/standar"
         android:layout_below="@+id/imc"
         android:layout_marginLeft="30sp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
 
         />
 
@@ -109,7 +109,7 @@
         android:id="@+id/stado"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/standar"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
 
         />
 
@@ -124,7 +124,7 @@
         android:id="@+id/stadod"
         android:layout_below="@+id/stado"
         android:layout_centerHorizontal="true"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
 
         />
 
@@ -134,7 +134,7 @@
         android:layout_width="match_parent"
         android:layout_below="@id/stadod"
         android:layout_height="1dp"
-        android:background="@android:color/black"/>
+        android:background="@android:color/white"/>
 
     <TextView
         android:layout_below="@id/div"
@@ -144,7 +144,7 @@
         android:textSize="25sp"
         android:gravity="center"
         android:id="@+id/pit"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/white"/>
 
     <TextView
         android:layout_marginTop="30sp"
@@ -153,7 +153,7 @@
         android:text="@string/_71_7_79_3"
         android:textSize="20sp"
         android:layout_marginLeft="20sp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -166,7 +166,7 @@
         android:layout_alignParentRight="true"
         android:textSize="20sp"
         android:layout_marginRight="20sp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -179,7 +179,7 @@
         android:id="@+id/dife"
         android:layout_below="@+id/pi"
         android:layout_centerHorizontal="true"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
 
         />
 
